@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Nest-Project-Tasks",
+		"_postman_id": "f77d61c4-fc5b-db71-81be-576205e7265f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth Signup",
+			"request": {
+				"url": "localhost:3000/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"Gino Chávez\",\n\t\"password\": \"@Hoola12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Auth Signin",
+			"request": {
+				"url": "localhost:3000/auth/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"Gino Chávez\",\n\t\"password\": \"@Hoola12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Tasks",
+			"request": {
+				"url": "localhost:3000/tasks",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikdpbm8gQ2jDoXZleiIsImlhdCI6MTYwOTI3ODM1MSwiZXhwIjoxNjA5MjgxOTUxfQ.1dtgzg8rPLNr5RtvGYf3pwlSPmE8dHSsp0TkqNquGq8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create task",
+			"request": {
+				"url": "localhost:3000/tasks",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikdpbm8gQ2jDoXZleiIsImlhdCI6MTYwOTI3ODM1MSwiZXhwIjoxNjA5MjgxOTUxfQ.1dtgzg8rPLNr5RtvGYf3pwlSPmE8dHSsp0TkqNquGq8",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"title 001\",\n\t\"description\": \"Task 001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
